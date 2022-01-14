@@ -61,11 +61,16 @@ class HomeActivity : AppCompatActivity() {
             viewHeader.setBackgroundColor(Color.parseColor("#7DCEA0"))
         }
 
+        for (item in userData.items){
+            nav.menu.add(0,0,0,item.name)
+                .setIcon(R.drawable.ic_baseline_view_list_24)
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggle.onOptionsItemSelected(item)){
             return true
+        }else{
         }
         return super.onOptionsItemSelected(item)
     }

@@ -31,4 +31,14 @@
                 android:title="Cerrar Sesión"></item>
         </menu>
     </item>
+
+    <item android:title="Items">
+        <menu>
+            <item
+                android:id="@+id/item_component"
+                android:icon="@drawable/ic_baseline_view_list_24"
+                android:title="Item"></item>
+        </menu>
+    </item>
+
 </menu>
